@@ -283,6 +283,8 @@
                     </materialDesign:PackIcon.Foreground>
                 </materialDesign:PackIcon>
             </Button>
+
+            <!--
             <Button
                 Margin="0,0,10,0"
                 HorizontalAlignment="Right"
@@ -323,6 +325,17 @@
                     </materialDesign:PackIcon.Foreground>
                 </materialDesign:PackIcon>
             </Button>
+            -->
+
+            <pc:PrestoSeekBar
+                Width="56"
+                Height="10"
+                Margin="0,0,16,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Foreground="#FF573BB8"
+                Maximum="1"
+                Value="{Binding Player.Volume}" />
         </Grid>
     </Grid>
 </UserControl>

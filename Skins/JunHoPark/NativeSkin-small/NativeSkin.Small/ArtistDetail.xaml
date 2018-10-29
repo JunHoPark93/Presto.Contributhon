@@ -6,6 +6,7 @@
     xmlns:local="clr-namespace:NativeSkin.Small"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pc="http://schemas.presto.component"
     xmlns:ps="clr-namespace:Presto.SDK;assembly=Presto.SDK"
     d:DesignHeight="500"
     d:DesignWidth="350"
@@ -97,6 +98,7 @@
             </Grid>
         </Grid>
         <Grid Grid.Row="2">
+            
             <TextBlock
                 Name="loadingText"
                 HorizontalAlignment="Center"

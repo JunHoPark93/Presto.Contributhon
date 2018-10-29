@@ -6,6 +6,8 @@
     xmlns:local="clr-namespace:NativeSkin.Small"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:p="http://schemas.presto.component"
+    xmlns:pc="clr-namespace:Presto.Common;assembly=Presto.Common"
     xmlns:ps="clr-namespace:Presto.SDK;assembly=Presto.SDK"
     d:DesignHeight="500"
     d:DesignWidth="350"
@@ -83,9 +85,16 @@
         </Grid>
 
         <Grid Grid.Row="1" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="17*" />
+                <ColumnDefinition Width="158*" />
+            </Grid.ColumnDefinitions>
             <ListView
                 Name="listview"
+                Grid.ColumnSpan="2"
                 VerticalAlignment="Top"
+                p:PrestoBehavior.MenuKey="{x:Static pc:PrestoKey.MenuLibrary}"
+                p:PrestoBehavior.SelectedItems="{p:Static ps:PrestoSDK.PrestoService.Library.Selector.SelectedItems}"
                 Foreground="LightSteelBlue"
                 ItemsSource="{Binding Library.Musics}"
                 MouseDoubleClick="ListView_DoubleClick">

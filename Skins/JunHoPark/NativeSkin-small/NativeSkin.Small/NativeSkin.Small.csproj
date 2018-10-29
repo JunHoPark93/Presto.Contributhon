@@ -33,7 +33,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartAction>Program</StartAction>
-    <StartProgram>$(SolutionDir)..\Core\Presto.exe</StartProgram>
+    <StartProgram>$(Presto)\Presto.exe</StartProgram>
     <StartArguments>-debug $(SolutionDir)\$(AssemblyName)\$(OutputPath)</StartArguments>
   </PropertyGroup>
   <ItemGroup>
@@ -46,17 +46,14 @@
     <Reference Include="MaterialDesignThemes.Wpf, Version=2.4.1.1101, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignThemes.2.4.1.1101\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
     </Reference>
-    <Reference Include="Presto.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Core\Presto.Common.dll</HintPath>
+    <Reference Include="Presto.Common, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kodnix.Presto.Common.1.1.1\lib\net461\Presto.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Presto.Component, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Core\Presto.Component.dll</HintPath>
+    <Reference Include="Presto.Component, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kodnix.Presto.Component.1.1.3\lib\net461\Presto.Component.dll</HintPath>
     </Reference>
-    <Reference Include="Presto.SDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Core\Presto.SDK.dll</HintPath>
+    <Reference Include="Presto.SDK, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kodnix.Presto.SDK.1.1.1\lib\net461\Presto.SDK.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
